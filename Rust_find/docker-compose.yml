@@ -1,0 +1,47 @@
+version: '3.5'
+
+services:
+  app:
+    build: ./app
+    container_name: rust_find-app
+    command: gunicorn --bind 0.0.0.0:5000 app:app
+    expose:
+      - 5000
+    depends_on:
+      - db
+      - pars
+    networks:
+      - webnet
+
+  pars:
+    build: ./pars
+    container_name: rust_find-pars
+    command: python3 pars.py
+    depends_on:
+      - db
+    networks:
+      - webnet
+
+  db:
+    image: postgres:16-alpine
+    container_name: rust_find-db
+    environment:
+      - POSTGRES_PASSWORD=qwerty
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=servers_db
+    networks:
+      - webnet
+  
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80 
+    depends_on:
+      - app
+    networks: 
+      - webnet  
+
+
+networks:
+  webnet:
+    driver: bridge
