@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+    {% block head %}
+        <title>Пиратские сервера</title>
+        <meta name="keywords" content="пиратские сервера раст, пиратские классические сервера раст">
+    {% endblock %}
+    {% block main %}
+        {% for index in articles %}
+            <ul class="server">
+                <li class="server" ><span class="name_s"><strong>{{ index.name_s }}</strong></span> <span class="online_s">{{ index.online_s }}</span></li>
+                <li class="server"><span class="old_s">{{ index.old_s }}</span></li>
+                <li class="server"><span class="connect_s">{{ index.connect_s }}</span> </li>
+            </ul>    
+        {% endfor %}
+    {% endblock %}  

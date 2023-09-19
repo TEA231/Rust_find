@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="icon" href="{{ url_for('static', filename='img/rust_ico.png') }}" type="image/x-icon">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="menu"> <a href="/main">Главное</a> </li>
+                <li class="menu"> <a href="/servers">Сервера</a> </li>
+                <li class="menu"> <a href="/monuments"> Монументы</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        {% block main %}{% endblock %}
+    </main>
+    
+    <footer>
+        <a href="https://t.me/+k5GkzTRDPNdhZWFi"><img class="tg_ico" src="{{ url_for('static', filename='img/tg_ico.png') }}"></a>
+        <ul class="nav-in-footer">  
+            <li class="nav-in-footer"> <a target="_blank" href="https://forum.alkad.org/resources/rust.7/">Клиент - Rust | Форум проекта Alkad.ORG</a></li>
+            <li class="nav-in-footer"> <a target="_blank" href="https://rust.facepunch.com/">Официальный Rust</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+    {% block head %}
+        <title>Сервера</title>
+        <meta name="keywords" content="сервера раст, классические сервера раст">
+    {% endblock %}
+    {% block main %}
+        <div class="choice_s">
+            <div class="choice_s2">
+                <a class="ch_a" href="/servers_p"><img class="image_in_choice_s" src="{{ url_for('static', filename='img/pirate.png') }}"></a>
+                <p class="ch_p">Rust | проект Alkad.ORG</p>
+            </div>
+
+            <div class="choice_s2">
+                <a class="ch_a" href="/servers_l"><img class="image_in_choice_s" src="{{ url_for('static', filename='img/licensed3.png')}}"></a>
+                <p class="ch_p">Rust | Лицензия</p>
+            </div>
+        </div>
+    {% endblock %}

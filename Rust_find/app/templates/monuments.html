@@ -1,0 +1,345 @@
+{% extends 'base.html' %}
+    {% block head %}
+        <title>Монументы</title>
+        <meta name="keywords" content="ртшки в расте, карты в расте, радиация в расте">
+    {% endblock %}
+    {% block main %}
+        <div class="rt_all">
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/aerodrome.png') }}" >
+                <h2 class="h_in_rt">Аэродром</h2>
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                </div>
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/keycard_red.png') }}">
+                </div>
+                <p>Радиация: 10%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/arctic_base.png') }}" >
+                <h2 class="h_in_rt">Арктическая база</h2>
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                </div>
+
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/keycard_red.png') }}">
+                </div>
+                <p>Радиация: 13%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/bandit_base.png') }}" >
+                <h2 class="h_in_rt">Город бандитов</h2>
+
+                <p>Радиация: 0%</p>
+                <p>Мирная зона</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Excavator.png') }}" >
+                <h2 class="h_in_rt">Большой экскаватор</h2>
+
+                <p>Радиация: 10%</p>
+            </div>
+            
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Fishing_Village.png') }}" >
+                <h2 class="h_in_rt">Рыбацкая деревня</h2>
+                <p>Радиация: 0%</p>
+                <p>Мирная зона</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Gas_station.png') }}" >
+                <h2 class="h_in_rt">Заправка</h2>
+                
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                </div>
+
+                <p>Радиация: 0%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/harbor.png') }}" >
+                <h2 class="h_in_rt">Порт</h2>
+            
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                </div>
+
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                </div>
+
+                <p>Радиация: 0%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Junkyard.png') }}" >
+                <h2 class="h_in_rt">Свалка</h2>
+            
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                </div>
+
+                <p>Радиация: 0%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Lighthouse.png') }}" >
+                <h2 class="h_in_rt">Маяк</h2>
+        
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                </div>
+
+                <p>Радиация: 0%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/military_base.png') }}" >
+                <h2 class="h_in_rt">Военная база</h2>
+
+                <p>Радиация: 0%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Military_Tunnels.png') }}" >
+                <h2 class="h_in_rt">Военные туннели</h2>
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/keycard_red.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                </div>
+                <p>Радиация: 10-25%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/nukesilo_monument_menubg.png') }}" >
+                <h2 class="h_in_rt">Заброшенная ракетная шахта</h2>
+            
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                </div>
+
+                <p>Радиация: 25%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Oilrig.png') }}" >
+                <h2 class="h_in_rt">Нефтевышка</h2>
+                
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/keycard_red.png') }}">
+                </div>
+
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                </div>
+
+                <p>Радиация: 0%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Satallite_dish.png') }}" >
+                <h2 class="h_in_rt">Спутниковые антенны</h2>
+                
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                </div>
+
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                </div>
+
+                <p>Радиация: 2-11%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Sewer_Branch.png') }}" >
+                <h2 class="h_in_rt">Канализационная ветка</h2>
+            
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                </div>
+
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                </div>
+
+                <p>Радиация: 2-11%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/spaceport.png') }}" >
+                <h2 class="h_in_rt">Космодром</h2>
+            
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/keycard_red.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                </div>
+
+                <p>Радиация: 10-максимум %</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Sphere_tank.png') }}" >
+                <h2 class="h_in_rt">Сфера</h2>
+
+                <p>Радиация: 10%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Stables.png') }}" >
+                <h2 class="h_in_rt">Ранчо</h2>
+                <p>Радиация: 0%</p>
+                <p>Мирная зона</p>
+            </div>
+            
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Supermarket.png') }}" >
+                <h2 class="h_in_rt">Супермаркет</h2>
+
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                </div>
+
+                <p>Радиация: 0%</p>
+            </div>
+            
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Trainyard.png') }}" >
+                <h2 class="h_in_rt">Депо</h2>
+                
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                </div>
+
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/keycard_red.png') }}">
+                </div>
+
+                <p>Радиация: 11-25%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Underwater_Labs.png') }}" >
+                <h2 class="h_in_rt">Подводная лаборатория</h2>
+            
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/keycard_red.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                </div>
+
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                </div>
+
+                <p>Радиация: 0-максимум %</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Warehouse_rust.png') }}" >
+                <h2 class="h_in_rt">Склад</h2>
+
+                <p>Радиация: 0%</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/Water_treatment_plant.png') }}" >
+                <h2 class="h_in_rt">Очистные сооружения</h2>
+            
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                </div>
+
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/keycard_red.png') }}">
+                </div>
+
+                <p>Радиация: 0-25%</p>
+            </div>
+            
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/g_img.png') }}" >
+                <h2 class="h_in_rt">Мирный город</h2>
+                <p>Радиация: 0%</p>
+                <p>Мирная зона</p>
+            </div>
+
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/power_plant.png') }}" >
+                <h2 class="h_in_rt">Электростанция</h2>
+
+                <h2 class="h_in_rt">Нужно для лутания</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/Green_KeyCard.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/KeyCard_blue.png') }}">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/fuse.png') }}">
+                </div>
+
+                <h2 class="h_in_rt">Можно найти</h2>
+                <div class="card_in_rt">
+                    <img class="img_card_in_rt" src="{{ url_for('static', filename='img/keycard_red.png') }}">
+                </div>
+
+                <p>Радиация: 0-максимум %</p>
+            </div>
+            
+            <div class="rt">
+                <img class='in_rt' src="{{ url_for('static', filename='img/ferry_terminal.png') }}" >
+                <h2 class="h_in_rt">Паромный терминал</h2>
+                <p>Радиация: 0%</p>
+            </div>
+            
+        </div>
+    {% endblock %}

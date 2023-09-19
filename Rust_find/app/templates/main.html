@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+    {% block head %}
+        <title>Rust find</title>
+        <meta name="keywords" content="раст, rust">
+    {% endblock %}
+    {% block main %}
+        <img class='img-in-main' src="{{ url_for('static', filename='img/logo2.png') }}">
+        <p>Rust — компьютерная игра в жанре симулятора выживания, была создана независимой британской компанией Facepunch Studios, возглавляемой c 2014 года Гарри Ньюмэном. Игра была выпущена в раннем доступе в декабре 2013 года, 8 февраля 2018 года состоялся её полноценный релиз для Windows и macOS.</p>
+        <img class='img-in-main' src="{{ url_for('static', filename='img/g_img2.png') }}">      
+        <p>Существует огромное количество разновидностей серверов, от типа которых зависит сам геймплей и темп развития в игре.</p>
+        </p>  
+        <img class='img-in-main' src="{{ url_for('static', filename='img/g_img.png') }}">  
+        <p>Данный сайт поможет вам найти подходящий сервер для игры как на официальной версии игры <a target="_blank" href="https://rust.facepunch.com/">Rust</a>, так и на проекте от <a target="_blank" href="https://forum.alkad.org/">Alkad.ORG</a></p>
+        <p>Cдесь собраны только ванильные сервера.</p>
+    {% endblock %}
